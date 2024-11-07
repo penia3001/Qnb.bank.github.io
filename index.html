@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müşteri Temsilcisi Görüşme Scripti</title>
+    <style>
+        /* Genel ayarlar ve profesyonel görsel stil */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #3a3a3a;
+            height: 100vh;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        /* Başlık (H1) stili */
+        h1 {
+            text-align: center;
+            color: #005f73;
+            margin-top: 40px;
+            font-size: 2.2em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Resim için stil */
+        .image-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        /* Diyalog kutuları ve stil ayarları */
+        .dialogue {
+            margin: 15px;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-left: 6px solid #0077b6;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            max-width: 80%;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-wrap: break-word;
+            backdrop-filter: blur(8px);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Temsilci (Agent) ve müşteri (Customer) etiketleri */
+        .agent, .customer {
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-top: 15px;
+            text-transform: capitalize;
+        }
+
+        .agent {
+            color: #0077b6;  /* Temsilci rengi */
+            font-size: 1.2em;
+        }
+
+        .customer {
+            color: #e63946;  /* Müşteri rengi */
+            font-size: 1.2em;
+        }
+
+        /* Diyalog metin içeriği stili */
+        .content {
+            font-size: 1.05em;
+            color: #4f4f4f;
+            line-height: 1.6;
+            margin-top: 8px;
+        }
+
+        /* Sayfa ve içerik için genel hizalama ve düzen */
+        .container {
+            width: 100%;
+            max-width: 1300px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        /* Sayfa içerik için ekstra boşluklar */
+        .content-wrapper {
+            padding-top: 40px;
+        }
+
+        /* Yönlendirme butonları ve stil */
+        .button {
+            background-color: #0077b6;
+            color: white;
+            font-size: 1em;
+            padding: 12px 24px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #005f73;
+        }
+
+        /* Anket kutusunun stili */
+        .survey-link {
+            background-color: #ffe156;
+            color: #3a3a3a;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .survey-link:hover {
+            background-color: #ff9f1c;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Müşteri Temsilcisi Görüşme Scripti</h1>
+
+    <!-- Görüntü için container -->
+    <div class="image-container">
+        <img src="https://probililaclama.com/images/reference/fedce61225dc46cf9a3e656de50548d4.jpg" alt="Background Image">
+    </div>
+
+    <div class="container">
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">İyi günler! İsmim İsmail Hakkı, QNB BANK adına arıyorum. Sevgi hanım ile görüşebilir miyim?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Buyrun, ben.</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Müsait misiniz Sevgi Hanım?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Evet, buyurun.</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Görüşmelerimiz hizmet kalitesi takibi amacıyla kayıt altına alınmaktadır. Dilerseniz iletişim tercihlerinizi değiştirebilirsiniz. Güvenliğiniz açısından doğum yerinizi ve doğum tarihinizi gün/ay/yıl olarak rica edebilir miyim?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">16.11.2001</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Doğum yerinizi alabilir miyim?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Diyarbakır.</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Verdiğiniz doğru bilgiler için teşekkür ederim. Sizi QNB BANK hesabınızdaki 30 gün gecikmiş ödeme hakkında konuşmak ve bu durumu çözmek için birlikte bir ödeme günü belirlemek adına aradım. Bir ödeme planı oluşturmak, hem mevcut durumunuzu hem de gelecekteki finansal sağlığınızı güvence altına almak için kritik bir adım olduğunu belirtmemde fayda var. Bu süreçte size en uygun çözümü bulmak istiyorum. Ödeme planı ile ilgili seçenekleri konuşarak, hem sizin için en rahat ve uygun çözümü bulmayı, hem de gelecekteki finansal hedeflerinizi güvence altına almayı hedefliyorum. Dilerseniz sizce hangi yaklaşım size daha uygun olacağını belirleyelim?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">İyide ben ekonomik olarak zorlu bir süreçten geçiyorum. Param yok.</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Anlıyorum Sevgi Hanım. Hepimizin zaman zaman ekonomik olarak zorlayıcı bir süreçten geçebileceğini biliyorum. Ancak, kredi sicilinizin olumsuz etkilenmesini ve gelecekte karşılaşabileceğiniz finansal sorunları önlemek adına bir ödeme günü belirlemek gerçekten çok önemli. Bu noktada size esneklik gösterebiliriz. Ödeme günü konusunda farklı seçenekler sunarak sizin için en rahat olacağı bir gün belirlemeye yardımcı olmak istiyorum. Sizin için uygun olan günleri nasıl belirlemek istersiniz?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Nasıl bir ödeme planı öneriyorsunuz?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Tabii ki, Sevgi Hanım. İlk adım olarak, mevcut borcunuzun bir kısmını ödeme imkânı sağlayabileceğiniz bir tarih belirleyebiliriz. Örneğin, önümüzdeki ayın başında veya ortasında bir ödeme yapmanız mümkün olabilir mi? Ayrıca, borcunuzun geri kalan kısmını birkaç taksitte ödeme olanağınız da olabilir. Bu esneklikle size uygun bir çözüm sunmayı amaçlıyorum. Sizin için en rahat olan ödeme planını belirlememize yardımcı olmak adına hangi tarihleri tercih edebileceğinizi paylaşabilir misiniz?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Evet, belki gelecek ayın ortasında olabilir. Ancak, ben öncesinde eşime danışmak istiyorum.</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Tabii ki Sevgi Hanım. Karar öncesi eşinizle konuşmanız çok doğal ve önemli bir adım. Sizin ve eşinizin bu süreçten memnun kalmasını sağlamak bizim için de öncelikli. Bu aşamada birlikte değerlendirebilmeniz adına size özet bilgi sunabilir ya da kararınıza destek olacak bazı seçenekleri ayrıntılı olarak paylaşabilirim. Dilerseniz eşinizle birlikte tüm seçenekleri gözden geçirebileceğiniz bir randevu oluşturalım ve size en uygun çözümü birlikte değerlendirelim. Hangi gün ya da saat sizin için uygun olur?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Sanırım salı günü.</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Teşekkür ederim, Sevgi Hanım. Randevunuzu 12 Kasım 2024 Salı günü, mesai saatlerinde arama olarak planlıyorum. Bu düzenlemeyi onaylıyor musunuz?  </p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Onaylıyorum</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Görüşme gününe kadar herhangi bir değişiklik ya da ek bir talebiniz olursa, lütfen bizimle iletişime geçmekten çekinmeyin. SİZİNLE YAPMIŞ OLDUĞUMUZ GÖRÜŞMEYİ DEĞERLENDİRMEK ADINA BİR ANKET ÇALIŞMAMIZ BULUNMAKTADIR. YÖNLENDİRMEMİ İSTER MİSİNİZ?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Olur yönlendirebilirsiniz.</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Teşekkür ederim sevgi hanım. Ankete yönlendiriyorum. Yardımcı olabileceğim farklı bir konu var mı?</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="customer">MÜŞTERİ:</p>
+            <p class="content">Hayır, başka bir şey yok. Teşekkür ederim.</p>
+        </div>
+
+        <div class="dialogue">
+            <p class="agent">TEMSİLCİ:</p>
+            <p class="content">Vakit ayırdığınız için ben teşekkür eder ve iyi günler dilerim.</p>
+        </div>
+
+        <div class="survey-link">
+            <a href="https://example.com/survey" target="_blank">Müşteri Memnuniyet Anketine Katılın</a>
+        </div>
+
+        <div class="button">
+            <button onclick="window.location.href='https://github.com/penia3001';">Ana Sayfaya Dön</button>
+        </div>
+    </div>
+</body>
+</html>
